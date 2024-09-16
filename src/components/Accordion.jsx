@@ -41,11 +41,12 @@ function AccordionItem({ item }) {
       >
         <div> {item.title}</div>
         <ChevronDownIcon
-          style={{
-            width: "1.2rem",
-            transition: "all 0.2s ease-out",
-            rotate: isOpen ? "180deg" : "0deg",
-          }}
+          className="accordion-item__chevron"
+          //   style={{
+          //     width: "1.2rem",
+          //     transition: "all 0.2s ease-out",
+          //     rotate: isOpen ? "180deg" : "0deg",
+          //   }}
         />
       </div>
       <div className="accordion-item__content">{item.text}</div>
